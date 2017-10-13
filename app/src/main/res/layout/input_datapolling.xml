@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="25dp"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="nama"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/provinsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16"
+            android:text="PROVINSI : JAWA BARAT"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/kabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kabupaten" />
+
+        <Spinner
+            android:id="@+id/kecamatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kecamatan" />
+
+        <Spinner
+            android:id="@+id/kelurahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kelurahan" />
+
+        <EditText
+            android:id="@+id/notps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No. TPS" />
+
+
+        <EditText
+            android:id="@+id/polling1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Polling kandidat 1" />
+
+        <EditText
+            android:id="@+id/polling2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Polling kandidat 2" />
+
+        <EditText
+            android:id="@+id/polling3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Polling kandidat 3" />
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/upload"
+            android:src="@drawable/logoprofile"
+            android:scaleType="centerCrop"/>
+
+        <!---->
+        <!--<ImageView-->
+            <!--android:id="@+id/ImageToUpload"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="300dp" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/upload"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Upload" />-->
+        <!--<Button-->
+            <!--android:id="@+id/ambil_gambar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="24dp"-->
+            <!--android:layout_marginTop="24dp"-->
+            <!--android:text="Ambil Gambar Form C1" />-->
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:onClick="userSubmit"
+            android:text="Kirim" />
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
