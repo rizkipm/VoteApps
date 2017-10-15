@@ -13,14 +13,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="125dp"
             android:text="Input Poling" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnGaleri"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GALERI" />
