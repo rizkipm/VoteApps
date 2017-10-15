@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Poling Apps</string>
+    <string name="title_activity_galeri">ActivityGaleri</string>
 </resources>
