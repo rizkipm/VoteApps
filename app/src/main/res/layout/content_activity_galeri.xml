@@ -8,4 +8,8 @@
     tools:context="imastudio.rizki.com.polingapps.activity.ActivityGaleri"
     tools:showIn="@layout/activity_galeri">
 
+    <ListView
+        android:id="@+id/listGaleri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </android.support.constraint.ConstraintLayout>
