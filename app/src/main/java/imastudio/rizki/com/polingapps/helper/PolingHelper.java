@@ -48,14 +48,14 @@ import java.util.regex.Pattern;
 
 @SuppressLint("SimpleDateFormat")
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class AzrielHelper {
+public class PolingHelper {
     private static final int DEBUG = 1;
     public static final String APP = "bukitasam-apps";
 //    public static final String BASE_URL = "http://192.168.100.9/mentoring_server/api/";
-    public static final String BASE_URL = "http://192.168.43.160/bukit_asam/api/";
+    public static final String BASE_URL = "http://192.168.100.9/PolingWeb/index.php/api/";
     public static final String BASE_URL_IMGMENU = "http://192.168.43.160/bukit_asam/images/";
 //    public static final String BASE_URL = "http://192.168.43.160/mentoring_server/api/";
-    public static final String BASE_URL_IMAGE = "http://192.168.43.160/bukit_asam/images/";
+    public static final String BASE_URL_IMAGE = "http://192.168.100.9/PolingWeb/img/data/";
     public static final String BASE_URL_IMAGE_PROFIL = "http://192.168.43.160/bukit_asam/img/";
     public static final String BASE_URL_IMAGE_PAYMENT = "http://192.168.43.160/bukit_asam/img/payment/";
 
@@ -174,7 +174,7 @@ public class AzrielHelper {
         DateFormat formatter1 = new SimpleDateFormat("yyyyMMdd_HHmmss");
 
         Date now = new Date();
-        AzrielHelper.pre("tgl simpan: " + formatter1.format(now));
+        PolingHelper.pre("tgl simpan: " + formatter1.format(now));
         return formatter1.format(now);
     }
 
@@ -975,9 +975,9 @@ public class AzrielHelper {
 
             OutputStream outStream = null;
             String namaFilex = f.getAbsolutePath().substring(f.getAbsolutePath().lastIndexOf("/") + 1);
-            String ektensi = AzrielHelper.getExtension(f);
-            String filename = AzrielHelper.tglJamSekarangFile() + "." + ektensi;
-            AzrielHelper.pre("nama file " + filename);
+            String ektensi = PolingHelper.getExtension(f);
+            String filename = PolingHelper.tglJamSekarangFile() + "." + ektensi;
+            PolingHelper.pre("nama file " + filename);
             File sdCardDirectory = new File(Environment
                     .getExternalStorageDirectory() + File.separator + "projectMonitoring");
             sdCardDirectory.mkdirs();

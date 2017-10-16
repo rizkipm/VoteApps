@@ -11,7 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 
-import imastudio.rizki.com.polingapps.helper.AzrielHelper;
+import imastudio.rizki.com.polingapps.helper.PolingHelper;
 
 
 public class ImageCustomize {
@@ -131,9 +131,9 @@ public class ImageCustomize {
 
             OutputStream outStream = null;
             String namaFilex = f.getAbsolutePath().substring(f.getAbsolutePath().lastIndexOf("/") + 1);
-            String ektensi = AzrielHelper.getExtension(f);
-            String filename = AzrielHelper.tglJamSekarangFile() + "." + ektensi;
-            AzrielHelper.pre("nama file " + filename);
+            String ektensi = PolingHelper.getExtension(f);
+            String filename = PolingHelper.tglJamSekarangFile() + "." + ektensi;
+            PolingHelper.pre("nama file " + filename);
             File sdCardDirectory = new File(Environment
                     .getExternalStorageDirectory() + File.separator + "projectMonitoring");
             sdCardDirectory.mkdirs();

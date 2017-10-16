@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imgGambar"
         android:layout_width="match_parent"
         android:layout_height="225dp"
         app:srcCompat="@drawable/vote4" />
@@ -19,19 +19,29 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/txtJudul"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Judul" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imgLove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="75dp"
             android:layout_marginRight="3dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_star" />
+
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/TeksPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:text="Point" />
 </LinearLayout>
